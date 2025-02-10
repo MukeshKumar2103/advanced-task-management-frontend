@@ -1,0 +1,11 @@
+# # Run the format and lint commands
+# npm run format
+# npm run lint
+
+# # Add only the staged files (the ones lint-staged modified)
+# git diff --name-only --staged | xargs git add
+
+# git add .
+# git commit -m 'initial'
+
+npm test

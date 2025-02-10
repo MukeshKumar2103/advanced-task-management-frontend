@@ -1,0 +1,132 @@
+@import './theme.css';
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: Poppins, sans-serif;
+}
+
+:root {
+  --it-color-primary: #3d81d1;
+  --it-color-primary-darker: #316bae;
+  --it-color-white: #fff;
+  --it-color-gray-200: #eff2f7;
+  --it-color-gray-800: #3c4858;
+  --it-color-green: #5cb945;
+  --it-color-red: #e2757a;
+  --it-color-text: #2e3238;
+  --it-color-contrast-low: var(--it-color-gray-200);
+  --it-color-contrast-medium: var(--it-color-gray-800);
+  --it-color-bg-change-highlight: #3d81d126;
+  --it-radius: 0.3em;
+  --it-radius-md: var(--it-radius, 0.25em);
+  --it-font-primary: 'Inter', sans-serif;
+  --it-font-size-base: 15px;
+  --it-top-toolbar-height: 44px;
+  --it-bottom-toolbar-height: 50px;
+
+  --it-space-unit: 17px;
+  --it-space-xxxxs: calc(var(--it-space-unit) * 0.125);
+  --it-space-xxxs: calc(var(--it-space-unit) * 0.25);
+  --it-space-xxs: calc(var(--it-space-unit) * 0.375);
+  --it-space-xs: calc(var(--it-space-unit) * 0.5);
+  --it-space-sm: calc(var(--it-space-unit) * 0.75);
+  --it-space-md: calc(var(--it-space-unit) * 1.25);
+  --it-space-lg: calc(var(--it-space-unit) * 2);
+  --it-space-xl: calc(var(--it-space-unit) * 3.25);
+  --it-space-xxl: calc(var(--it-space-unit) * 5.25);
+  --it-space-xxxl: calc(var(--it-space-unit) * 8.5);
+  --it-space-xxxxl: calc(var(--it-space-unit) * 13.75);
+
+  --it-scrollbar-width: 6px;
+
+  --it-shadow-xs: 0 0.1px 0.3px rgba(0, 0, 0, 0.06),
+    0 1px 2px rgba(0, 0, 0, 0.12);
+  --it-shadow-sm: 0 0.3px 0.4px rgba(0, 0, 0, 0.025),
+    0 0.9px 1.5px rgba(0, 0, 0, 0.05), 0 3.5px 6px rgba(0, 0, 0, 0.1);
+  --it-shadow-md: 0 0.9px 1.5px rgba(0, 0, 0, 0.03),
+    0 3.1px 5.5px rgba(0, 0, 0, 0.08), 0 14px 25px rgba(0, 0, 0, 0.12);
+  --it-shadow-lg: 0 1.2px 1.9px -1px rgba(0, 0, 0, 0.014),
+    0 3.3px 5.3px -1px rgba(0, 0, 0, 0.038),
+    0 8.5px 12.7px -1px rgba(0, 0, 0, 0.085),
+    0 30px 42px -1px rgba(0, 0, 0, 0.15);
+  --it-shadow-xl: 0 1.5px 2.1px -6px rgba(0, 0, 0, 0.012),
+    0 3.6px 5.2px -6px rgba(0, 0, 0, 0.035),
+    0 7.3px 10.6px -6px rgba(0, 0, 0, 0.07),
+    0 16.2px 21.9px -6px rgba(0, 0, 0, 0.117),
+    0 46px 60px -6px rgba(0, 0, 0, 0.2);
+}
+
+body {
+  font-smooth: antialiased;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  overflow: hidden;
+  font-size: 13px;
+  /* font-family:
+    -apple-system,
+    BlinkMacSystemFont,
+    Segoe UI,
+    roboto,
+    Helvetica Neue,
+    helvetica,
+    arial,
+    sans-serif; */
+}
+
+body {
+  color: var(--ut-content-default);
+  background: var(--ut-background-main);
+  --ut-global-actions-bar-background: var(--ut-background-primary-dark);
+  --ut-content-default: var(--ut-grey1100);
+  --ut-content-tertiary: var(--ut-grey900);
+  --ut-shadow-effect: rgba(var(--ut-effect-primary), 0.16);
+}
+
+/* Shadow effects */
+.shadow-overlay {
+  box-shadow: rgba(var(--_ut-grey1000), 0.56);
+}
+.shadow-overlay-light {
+  box-shadow: rgba(var(--_ut-grey1000), 0.32);
+}
+.shadow-overlay-1 {
+  box-shadow: 0 var(--1px) var(--2px) rgba(0, 0, 0, 0.055);
+}
+.shadow-overlay-2 {
+  box-shadow:
+    0 var(--1px) var(--3px) rgba(0, 0, 0, 0.106),
+    0 var(--1px) var(--2px) var(--negative-1px) rgba(0, 0, 0, 0.106);
+}
+.shadow-overlay-3 {
+  box-shadow:
+    0 var(--4px) var(--6px) var(--negative-1px) rgba(0, 0, 0, 0.106),
+    0 var(--2px) var(--4px) var(--negative-2px) rgba(0, 0, 0, 0.106);
+}
+.shadow-overlay-4 {
+  box-shadow:
+    0 var(--10px) var(--15px) var(--negative-3px) rgba(0, 0, 0, 0.106),
+    0 var(--4px) var(--6px) var(--negative-4px) rgba(0, 0, 0, 0.106);
+}
+.shadow-overlay-5 {
+  box-shadow:
+    0 var(--20px) var(--25px) var(--negative-5px) rgba(0, 0, 0, 0.106),
+    0 var(--8px) var(--10px) var(--negative-6px) rgba(0, 0, 0, 0.106);
+}
+.shadow-overlay-heavy {
+  box-shadow:
+    0 var(--16px) var(--48px) rgba(0, 0, 0, 0.24),
+    0 var(--24px) var(--96px) rgba(0, 0, 0, 0.24);
+}
+
+.glass-effect {
+  background: var(--ut-white-16);
+}
+
+.glass-effect:hover {
+  background: var(--ut-white-20);
+}
